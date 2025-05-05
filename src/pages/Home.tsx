@@ -30,7 +30,7 @@ export default function Home() {
         <section className="px-4 flex flex-col gap-8 mt-[3rem] mb-[3rem]">
             <div className="flex justify-between
             items-center">
-                <h1 className="flex items-center gap-4 blurry rounded w-fit px-4 py-1">
+                <h1 className="flex items-center gap-4 blurry rounded w-fit px-4 py-1 text-sm">
                     <span>Available</span>
                     <span className="w-[0.7rem] h-[0.7rem] rounded-[50%] bg-[var(--primary-color)]"></span>
                 </h1>
