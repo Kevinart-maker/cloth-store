@@ -27,7 +27,7 @@ export default function Home() {
             </div>
         </header>
 
-        <section className="px-4 flex flex-col gap-8 mt-[3rem]">
+        <section className="px-4 flex flex-col gap-8 mt-[3rem] mb-[3rem]">
             <div className="flex justify-between
             items-center">
                 <h1 className="flex items-center gap-4 blurry rounded w-fit px-4 py-1">
