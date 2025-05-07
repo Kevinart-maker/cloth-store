@@ -30,9 +30,9 @@ export default function Home() {
         <section className="px-4 flex flex-col gap-8 mt-[3rem] mb-[3rem]">
             <div className="flex justify-between
             items-center">
-                <h1 className="flex items-center gap-4 blurry rounded w-fit px-4 py-1 text-sm">
+                <h1 className="flex items-center gap-3 light-blurry rounded w-fit px-4 py-0.5 text-sm">
                     <span>Available</span>
-                    <span className="w-[0.7rem] h-[0.7rem] rounded-[50%] bg-[var(--primary-color)]"></span>
+                    <span className="w-[0.3rem] h-[0.3rem] rounded-[50%] bg-[var(--primary-color)]"></span>
                 </h1>
 
                 <p className="text-xs flex items-center gap-2 cursor-pointer group">
@@ -41,7 +41,7 @@ export default function Home() {
                 </p>
             </div>
 
-            <div className="overflow-hidden md:overflow-auto w-full overflow-x-scroll md:overflow-x-hidden pb-[1.2rem] list flex justify-center">
+            <div className="md:overflow-auto overflow-x-scroll md:overflow-x-hidden pb-[1.2rem] list">
                 <div className="flex md:grid md:grid-cols-4 gap-2 w-fit">{product}</div>
             </div>
 
