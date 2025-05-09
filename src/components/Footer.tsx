@@ -1,3 +1,7 @@
+import { FaInstagram } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
+import { FaPinterest } from "react-icons/fa";
+
 export default function Footer() {
   return (
 <footer className="flex flex-col gap-15 px-10 py-15">
@@ -15,9 +19,9 @@ export default function Footer() {
   
         <div className="flex flex-col items-center gap-4 text-sm">
           <h1 className="text-2xl font-semibold">Follow Us</h1>
-          <span>Instagram</span>
-          <span>Twitter</span>
-          <span>Pinterest</span>
+          <span className="flex gap-2 items-center"><FaInstagram /><span>Instagram</span></span>
+          <span className="flex gap-2 items-center"><FaXTwitter /><span>Twitter</span></span>
+          <span className="flex gap-2 items-center"><FaPinterest /><span>Pinterest</span></span>
         </div>
       </div>
   <div className="w-full h-[1px] bg-[var(--primary-color)]"></div>

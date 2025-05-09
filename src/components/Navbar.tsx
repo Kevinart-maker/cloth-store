@@ -1,5 +1,7 @@
 import { useState } from 'react'
 import { PiShoppingCartSimpleFill } from "react-icons/pi";
+import * as motion from 'motion/react-client';
+
 
 export default function Navbar() {
 const [isOpen, setIsOpen] = useState(false)
@@ -7,15 +9,15 @@ const [isOpen, setIsOpen] = useState(false)
     
   return (
     <nav className="flex items-center justify-between p-2 py-5 md:px-8 px-4">
-      <h1 className="md:text-4xl text-2xl font-bold text-[var(--primary-color)]">Golf le Fleur</h1>
+      <h1 className="md:text-4xl text-2xl font-light text-[var(--primary-color)]">Golf le Fleur</h1>
 
         <div className="flex items-center md:flex-row-reverse md:gap-[3rem] gap-4">
             <PiShoppingCartSimpleFill/>
-            <div className="md:hidden flex flex-col cursor-pointer gap-1 z-[100]" onClick={() => setIsOpen(!isOpen)}>
+            <motion.div whileTap={{ scale: 0.8 }} className="md:hidden flex flex-col cursor-pointer gap-1 z-[100]" onClick={() => setIsOpen(!isOpen)}>
                 <span className={`h-[1.3px] bg-[var(--primary-color)] ${isOpen ? 'w-[1.5rem] rotate-45 bg-white' : 'w-[1.5rem]'}`}></span>
                 <span className={`w-[1.5rem] h-[1.3px] bg-[var(--primary-color)] ${isOpen ? 'hidden' : ''}`}></span>
                 <span className={`self-end h-[1.3px] bg-[var(--primary-color)] ${isOpen ? 'w-[1.5rem] rotate-[-45deg] translate-y-[-0.3rem] bg-white' : 'w-[1.2rem]'}`}></span>
-            </div>
+            </motion.div>
             <div className='md:flex gap-4 text-sm hidden'>
               <span>Collections</span>
               <span>Brands</span>
